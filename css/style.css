@@ -103,7 +103,6 @@ p {
     font-size: 1rem;
     font-size: clamp(1rem, 0.79rem + 0.89vw, 1.125rem);
     line-height: 1.5;
-    color: var(--black);
 }
 
 section {
@@ -154,7 +153,7 @@ section {
 .side-socials {
     width: 40px;
     position: fixed;
-    bottom: 0px;
+    bottom: 300px;
     left: 40px;
     right: auto;
     z-index: 10;
@@ -259,6 +258,34 @@ section {
 
 .hero-contact:hover {
     color: var(--blue);
+}
+
+/* footer */
+.footer {
+    background-color: var(--black);
+    color: var(--white);
+    display: flex;
+    -webkit-box-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    align-items: center;
+    flex-direction: column;
+    height: auto;
+    min-height: 70px;
+    padding: 15px;
+    text-align: left;
+}
+
+.footer-wrapper {
+    max-width: 900px;
+}
+
+.footer-big {
+    font-size: var(--fs-48);
+}
+
+.footer-med {
+    font-size: var(--fs-32);
 }
 
 /* 600px */
