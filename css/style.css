@@ -39,10 +39,6 @@ body {
     line-height: 1.56; 
 }
 
-.change-font {
-    font-family: var(--logo-font);
-}
-
 /* header */
 .header {
     display: flex;
@@ -153,7 +149,7 @@ section {
 .side-socials {
     width: 40px;
     position: fixed;
-    bottom: 300px;
+    bottom: 40%;
     left: 40px;
     right: auto;
     z-index: 10;
@@ -229,6 +225,7 @@ section {
 
 .hero-headline {
     color: var(--blue);
+    font-family: var(--logo-font);
 }
 
 .hero-headline > span{
@@ -238,12 +235,14 @@ section {
 
 .hero-contact {
     font-size: 1rem;
+    font-family: var(--logo-font);
     line-height: 1.625;
     letter-spacing: 2.29px;
     font-weight: 700;
     text-transform: uppercase;
     color: var(--black);
     text-decoration: none;
+    /* underline design */
     background-image: linear-gradient(
         to right,
         var(--purple) 75%,
@@ -257,7 +256,7 @@ section {
 }
 
 .hero-contact:hover {
-    color: var(--blue);
+    color: var(--purple);
 }
 
 /* footer */
@@ -286,6 +285,11 @@ section {
 
 .footer-med {
     font-size: var(--fs-32);
+}
+
+.footer-name {
+    color: var(--background);
+    text-decoration: underline;
 }
 
 /* 600px */
