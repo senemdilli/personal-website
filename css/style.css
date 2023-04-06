@@ -19,6 +19,7 @@
     --logo-font: 'Space Grotesk', sans-serif;
     --logo-font-2: 'Epilogue', sans-serif;
     --nav-height: 100px;
+    --border-radius: 10px;
 }
 
 html {
@@ -37,6 +38,10 @@ body {
     color: var(--black);
     font-size: var(--fs-18);
     line-height: 1.56; 
+}
+
+h2 {
+    font-family: var(--logo-font);
 }
 
 /* header */
@@ -99,6 +104,7 @@ p {
     font-size: 1rem;
     font-size: clamp(1rem, 0.79rem + 0.89vw, 1.125rem);
     line-height: 1.5;
+    margin: 0px 0px 15px;
 }
 
 section {
@@ -113,6 +119,10 @@ section {
     width: 1px;
     height: 1px;
     overflow: hidden;
+}
+
+.header {
+    width: calc(100% - 2rem);
 }
 
 .header-social svg {
@@ -130,7 +140,6 @@ section {
 }
 
 .wrapper {
-    width: calc(100% - 2rem);
     max-width: var(--container);
 }
 
@@ -191,13 +200,12 @@ section {
 /* hero */
 .hero {
     max-width: 900px;
+    padding-bottom: 0px;
 }
 
 #hero-img {
     width: 230px;
     position: relative;
-    left: 50%;
-    translate: -50%;
     border-radius: 5%;
     filter: grayscale(90%);
     transition: filter var(--transition);
@@ -209,10 +217,13 @@ section {
 
 .hero-wrapper {
     padding-bottom: 80px;
-    border-bottom: 1px solid var(--black);
     display: grid;
     grid-template-columns: 3fr 2fr;
     gap: 50px;
+}
+
+.line {
+    border-bottom: 2px solid var(--black);
 }
 
 .hero-text {
@@ -259,6 +270,18 @@ section {
     color: var(--purple);
 }
 
+/* about me sec  */
+.sec {
+    padding: 100px 0px;
+    max-width: 900px;
+}
+
+.about-me-text {
+    text-align: justify;
+}
+
+/* what i do sec */
+
 /* footer */
 .footer {
     background-color: var(--black);
@@ -292,11 +315,21 @@ section {
     text-decoration: underline;
 }
 
+/* .get-in-touch {
+    display: grid;
+    grid-template-columns: 3fr 2fr;
+}
+
+.footer-contact {
+    color: var(--background);
+} */
+
+
 /* 600px */
 @media (min-width: 37.5em) {
-    .wrapper {
+    /*.wrapper {
         width: calc(100% - 3.75rem);
-    }
+    } */
 
     .header-nav {
         justify-content: flex-start;
@@ -313,11 +346,13 @@ section {
     #hero-img {
         width: 300px;
         position: relative;
-        left: 0%;
-        translate: 0%;
+    }
+
+    .hero-img {
+        text-align: right;
     }
     
     .hero-text {
         text-align: left;
     }
-}
+} 
