@@ -243,11 +243,6 @@ section {
     font-family: var(--logo-font);
 }
 
-.hero-headline > span{
-    /*text-decoration: underline var(--purple); */
-    
-}
-
 .hero-contact {
     font-size: 1rem;
     font-family: var(--logo-font);
@@ -404,6 +399,11 @@ li {
     color: var(--background);
 } */
 
+/* ps */
+.ps {
+    text-align: center;
+    color: rgb(107 114 128/var(--tw-text-opacity));
+}
 
 /* 600px */
 @media (min-width: 37.5em) {
